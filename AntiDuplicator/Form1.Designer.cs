@@ -1,16 +1,16 @@
 ﻿namespace AntiDuplicator
 {
-    partial class ad
+    partial class Form1
     {
         /// <summary>
-        /// Требуется переменная конструктора.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// Освободить все используемые ресурсы.
+        /// Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">истинно, если управляемый ресурс должен быть удален; иначе ложно.</param>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,162 +20,238 @@
             base.Dispose(disposing);
         }
 
-        #region Код, автоматически созданный конструктором форм Windows
+        #region Windows Form Designer generated code
 
         /// <summary>
-        /// Обязательный метод для поддержки конструктора - не изменяйте
-        /// содержимое данного метода при помощи редактора кода.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
-            this.filesGrid = new System.Windows.Forms.DataGridView();
-            this.scanFileName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.scanFileSize = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.scanFileHash = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.scanFileDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.scanFilePath = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.scanPath = new System.Windows.Forms.TextBox();
-            this.scanAction = new System.Windows.Forms.Button();
-            this.actionGo = new System.Windows.Forms.Button();
-            this.adv = new System.Windows.Forms.PictureBox();
-            this.addScanPath = new System.Windows.Forms.FolderBrowserDialog();
-            this.action = new System.Windows.Forms.ComboBox();
-            this.scanProcess = new System.ComponentModel.BackgroundWorker();
-            ((System.ComponentModel.ISupportInitialize)(this.filesGrid)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.adv)).BeginInit();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.setPathToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.scanForFilesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.scanForDuplicatesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clearToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.donateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.guideToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.setScanPath = new System.Windows.Forms.FolderBrowserDialog();
+            this.backActions = new System.ComponentModel.BackgroundWorker();
+            this.fileName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fileSize = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fileHash = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fileDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.filePath = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fileMultiselect = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.openFilePath = new System.Windows.Forms.OpenFileDialog();
+            this.saveFilePath = new System.Windows.Forms.SaveFileDialog();
+            this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // filesGrid
+            // menuStrip1
             // 
-            this.filesGrid.AllowUserToAddRows = false;
-            this.filesGrid.AllowUserToDeleteRows = false;
-            this.filesGrid.AllowUserToResizeRows = false;
-            this.filesGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.filesGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.filesGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.scanFileName,
-            this.scanFileSize,
-            this.scanFileHash,
-            this.scanFileDate,
-            this.scanFilePath});
-            this.filesGrid.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.filesGrid.Location = new System.Drawing.Point(12, 35);
-            this.filesGrid.Name = "filesGrid";
-            this.filesGrid.ShowEditingIcon = false;
-            this.filesGrid.Size = new System.Drawing.Size(680, 325);
-            this.filesGrid.TabIndex = 0;
+            this.menuStrip1.BackColor = System.Drawing.SystemColors.Control;
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem,
+            this.editToolStripMenuItem,
+            this.helpToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(704, 24);
+            this.menuStrip1.TabIndex = 0;
+            this.menuStrip1.Text = "menuStrip1";
             // 
-            // scanFileName
+            // dataGridView1
             // 
-            this.scanFileName.HeaderText = "FileName";
-            this.scanFileName.Name = "scanFileName";
-            this.scanFileName.Width = 150;
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.fileName,
+            this.fileSize,
+            this.fileHash,
+            this.fileDate,
+            this.filePath,
+            this.fileMultiselect});
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 24);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(704, 417);
+            this.dataGridView1.TabIndex = 2;
             // 
-            // scanFileSize
+            // fileToolStripMenuItem
             // 
-            this.scanFileSize.HeaderText = "FileSize";
-            this.scanFileSize.Name = "scanFileSize";
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.openFileToolStripMenuItem,
+            this.saveFileToolStripMenuItem,
+            this.optionsToolStripMenuItem,
+            this.exitToolStripMenuItem});
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Text = "File";
             // 
-            // scanFileHash
+            // editToolStripMenuItem
             // 
-            this.scanFileHash.HeaderText = "FileHash";
-            this.scanFileHash.Name = "scanFileHash";
-            this.scanFileHash.Width = 200;
+            this.editToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.setPathToolStripMenuItem,
+            this.scanForFilesToolStripMenuItem,
+            this.scanForDuplicatesToolStripMenuItem,
+            this.clearToolStripMenuItem});
+            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
+            this.editToolStripMenuItem.Text = "Edit";
             // 
-            // scanFileDate
+            // helpToolStripMenuItem
             // 
-            this.scanFileDate.HeaderText = "FileDate";
-            this.scanFileDate.Name = "scanFileDate";
+            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.donateToolStripMenuItem,
+            this.guideToolStripMenuItem,
+            this.aboutToolStripMenuItem});
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Text = "Help";
             // 
-            // scanFilePath
+            // openFileToolStripMenuItem
             // 
-            this.scanFilePath.HeaderText = "FilePath";
-            this.scanFilePath.Name = "scanFilePath";
-            this.scanFilePath.Width = 250;
+            this.openFileToolStripMenuItem.Name = "openFileToolStripMenuItem";
+            this.openFileToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.openFileToolStripMenuItem.Text = "Open file";
             // 
-            // scanPath
+            // saveFileToolStripMenuItem
             // 
-            this.scanPath.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.scanPath.Location = new System.Drawing.Point(12, 8);
-            this.scanPath.Name = "scanPath";
-            this.scanPath.ReadOnly = true;
-            this.scanPath.Size = new System.Drawing.Size(300, 20);
-            this.scanPath.TabIndex = 1;
-            this.scanPath.Click += new System.EventHandler(this.textBox1_Click);
+            this.saveFileToolStripMenuItem.Name = "saveFileToolStripMenuItem";
+            this.saveFileToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.saveFileToolStripMenuItem.Text = "Save file";
             // 
-            // scanAction
+            // optionsToolStripMenuItem
             // 
-            this.scanAction.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.scanAction.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.scanAction.Location = new System.Drawing.Point(318, 5);
-            this.scanAction.Name = "scanAction";
-            this.scanAction.Size = new System.Drawing.Size(75, 24);
-            this.scanAction.TabIndex = 2;
-            this.scanAction.Text = "Scan";
-            this.scanAction.UseVisualStyleBackColor = true;
-            this.scanAction.Click += new System.EventHandler(this.scanAction_Click);
+            this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
+            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.optionsToolStripMenuItem.Text = "Options";
             // 
-            // actionGo
+            // exitToolStripMenuItem
             // 
-            this.actionGo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.actionGo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.actionGo.Location = new System.Drawing.Point(617, 5);
-            this.actionGo.Name = "actionGo";
-            this.actionGo.Size = new System.Drawing.Size(75, 24);
-            this.actionGo.TabIndex = 3;
-            this.actionGo.Text = "GO!";
-            this.actionGo.UseVisualStyleBackColor = true;
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exitToolStripMenuItem.Text = "Exit";
             // 
-            // adv
+            // setPathToolStripMenuItem
             // 
-            this.adv.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.adv.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.adv.Location = new System.Drawing.Point(12, 366);
-            this.adv.Name = "adv";
-            this.adv.Size = new System.Drawing.Size(680, 64);
-            this.adv.TabIndex = 5;
-            this.adv.TabStop = false;
+            this.setPathToolStripMenuItem.Name = "setPathToolStripMenuItem";
+            this.setPathToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
+            this.setPathToolStripMenuItem.Text = "Set path";
+            this.setPathToolStripMenuItem.Click += new System.EventHandler(this.setPathToolStripMenuItem_Click);
             // 
-            // action
+            // scanForFilesToolStripMenuItem
             // 
-            this.action.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.action.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.action.FormattingEnabled = true;
-            this.action.Items.AddRange(new object[] {
-            "DAR",
-            "DAO",
-            "DAY"});
-            this.action.Location = new System.Drawing.Point(399, 7);
-            this.action.MaxDropDownItems = 4;
-            this.action.Name = "action";
-            this.action.Size = new System.Drawing.Size(212, 21);
-            this.action.TabIndex = 6;
+            this.scanForFilesToolStripMenuItem.Name = "scanForFilesToolStripMenuItem";
+            this.scanForFilesToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
+            this.scanForFilesToolStripMenuItem.Text = "Scan for files";
+            this.scanForFilesToolStripMenuItem.Click += new System.EventHandler(this.scanForFilesToolStripMenuItem_Click);
             // 
-            // scanProcess
+            // scanForDuplicatesToolStripMenuItem
             // 
-            this.scanProcess.WorkerReportsProgress = true;
-            this.scanProcess.DoWork += new System.ComponentModel.DoWorkEventHandler(this.scanProcess_DoWork);
-            this.scanProcess.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.scanProcess_ProgressChanged);
-            this.scanProcess.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.scanProcess_RunWorkerCompleted);
+            this.scanForDuplicatesToolStripMenuItem.Name = "scanForDuplicatesToolStripMenuItem";
+            this.scanForDuplicatesToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
+            this.scanForDuplicatesToolStripMenuItem.Text = "Scan for duplicates";
             // 
-            // ad
+            // clearToolStripMenuItem
+            // 
+            this.clearToolStripMenuItem.Name = "clearToolStripMenuItem";
+            this.clearToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
+            this.clearToolStripMenuItem.Text = "Clear";
+            // 
+            // donateToolStripMenuItem
+            // 
+            this.donateToolStripMenuItem.Name = "donateToolStripMenuItem";
+            this.donateToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.donateToolStripMenuItem.Text = "Donate";
+            // 
+            // guideToolStripMenuItem
+            // 
+            this.guideToolStripMenuItem.Name = "guideToolStripMenuItem";
+            this.guideToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.guideToolStripMenuItem.Text = "Visit web-site";
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.aboutToolStripMenuItem.Text = "About";
+            // 
+            // backActions
+            // 
+            this.backActions.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backActions_DoWork);
+            // 
+            // fileName
+            // 
+            this.fileName.HeaderText = "Filename";
+            this.fileName.MinimumWidth = 120;
+            this.fileName.Name = "fileName";
+            this.fileName.Width = 120;
+            // 
+            // fileSize
+            // 
+            this.fileSize.HeaderText = "Size";
+            this.fileSize.MinimumWidth = 70;
+            this.fileSize.Name = "fileSize";
+            // 
+            // fileHash
+            // 
+            this.fileHash.HeaderText = "Hash";
+            this.fileHash.MinimumWidth = 120;
+            this.fileHash.Name = "fileHash";
+            this.fileHash.Width = 120;
+            // 
+            // fileDate
+            // 
+            this.fileDate.HeaderText = "Creation Date";
+            this.fileDate.MinimumWidth = 100;
+            this.fileDate.Name = "fileDate";
+            // 
+            // filePath
+            // 
+            this.filePath.HeaderText = "Path";
+            this.filePath.MinimumWidth = 200;
+            this.filePath.Name = "filePath";
+            this.filePath.Width = 200;
+            // 
+            // fileMultiselect
+            // 
+            this.fileMultiselect.HeaderText = "Multiselect";
+            this.fileMultiselect.MinimumWidth = 80;
+            this.fileMultiselect.Name = "fileMultiselect";
+            this.fileMultiselect.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.fileMultiselect.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // openFilePath
+            // 
+            this.openFilePath.FileName = "openFileDialog1";
+            // 
+            // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(704, 442);
-            this.Controls.Add(this.action);
-            this.Controls.Add(this.adv);
-            this.Controls.Add(this.actionGo);
-            this.Controls.Add(this.scanAction);
-            this.Controls.Add(this.scanPath);
-            this.Controls.Add(this.filesGrid);
-            this.Name = "ad";
+            this.ClientSize = new System.Drawing.Size(704, 441);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
+            this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AntiDuplicator";
-            ((System.ComponentModel.ISupportInitialize)(this.filesGrid)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.adv)).EndInit();
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -183,20 +259,32 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView filesGrid;
-        private System.Windows.Forms.TextBox scanPath;
-        private System.Windows.Forms.Button scanAction;
-        private System.Windows.Forms.Button actionGo;
-        private System.Windows.Forms.PictureBox adv;
-        private System.Windows.Forms.FolderBrowserDialog addScanPath;
-        private System.Windows.Forms.ComboBox action;
-        private System.ComponentModel.BackgroundWorker scanProcess;
-        private System.Windows.Forms.DataGridViewTextBoxColumn scanFileName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn scanFileSize;
-        private System.Windows.Forms.DataGridViewTextBoxColumn scanFileHash;
-        private System.Windows.Forms.DataGridViewTextBoxColumn scanFileDate;
-        private System.Windows.Forms.DataGridViewTextBoxColumn scanFilePath;
-
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem openFileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem saveFileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem optionsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem setPathToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem scanForFilesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem scanForDuplicatesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem clearToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem donateToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem guideToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fileName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fileSize;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fileHash;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fileDate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn filePath;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn fileMultiselect;
+        private System.Windows.Forms.FolderBrowserDialog setScanPath;
+        private System.ComponentModel.BackgroundWorker backActions;
+        private System.Windows.Forms.OpenFileDialog openFilePath;
+        private System.Windows.Forms.SaveFileDialog saveFilePath;
     }
 }
 

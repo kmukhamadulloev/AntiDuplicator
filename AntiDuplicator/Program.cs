@@ -9,14 +9,14 @@ namespace AntiDuplicator
     static class Program
     {
         /// <summary>
-        /// Главная точка входа для приложения.
+        /// The main entry point for the application.
         /// </summary>
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ad());
+            Application.Run(new Form1());
         }
     }
 }
